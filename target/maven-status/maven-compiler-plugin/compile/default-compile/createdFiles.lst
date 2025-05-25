@@ -1,0 +1,8 @@
+upjv\miage\l3\ecluse\ui\CliApp.class
+upjv\miage\l3\ecluse\ui\MainController.class
+upjv\miage\l3\ecluse\model\Boat.class
+upjv\miage\l3\ecluse\ui\EcluseApp.class
+upjv\miage\l3\ecluse\controller\LockController.class
+upjv\miage\l3\ecluse\Main.class
+upjv\miage\l3\ecluse\event\EventBus.class
+upjv\miage\l3\ecluse\model\BoatQueue.class

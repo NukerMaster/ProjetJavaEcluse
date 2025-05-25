@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ecluse-sim,upjv.miage.l3.ecluse.ui,CliApp,68,0,9,0,17,0,8,0,2,0
+ecluse-sim,upjv.miage.l3.ecluse.ui,MainController,130,0,0,0,26,0,8,0,8,0
+ecluse-sim,upjv.miage.l3.ecluse.ui,EcluseApp,22,0,0,0,6,0,2,0,2,0
+ecluse-sim,upjv.miage.l3.ecluse,Main,21,0,4,0,5,0,4,0,2,0
+ecluse-sim,upjv.miage.l3.ecluse.model,BoatQueue,4,19,0,0,1,4,1,3,1,3
+ecluse-sim,upjv.miage.l3.ecluse.model,Boat,0,9,0,0,0,1,0,1,0,1
+ecluse-sim,upjv.miage.l3.ecluse.event,EventBus,31,0,0,0,6,0,6,0,6,0
+ecluse-sim,upjv.miage.l3.ecluse.controller,LockController,33,0,0,0,13,0,5,0,5,0

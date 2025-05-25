@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EventBus.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ecluse-sim</a> &gt; <a href="index.source.html" class="el_package">upjv.miage.l3.ecluse.event</a> &gt; <span class="el_source">EventBus.java</span></div><h1>EventBus.java</h1><pre class="source lang-java linenums">package upjv.miage.l3.ecluse.event;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.function.Consumer;
+
+public final class EventBus {
+<span class="nc" id="L7">    private static final EventBus INSTANCE = new EventBus();</span>
+<span class="nc" id="L8">    public static EventBus get() { return INSTANCE; }</span>
+
+<span class="nc" id="L10">    private final CopyOnWriteArrayList&lt;Consumer&lt;String&gt;&gt; subs = new CopyOnWriteArrayList&lt;&gt;();</span>
+<span class="nc" id="L11">    private EventBus() {}</span>
+
+<span class="nc" id="L13">    public void subscribe(Consumer&lt;String&gt; c) { subs.add(c); }</span>
+<span class="nc" id="L14">    public void publish(String msg)           { subs.forEach(c -&gt; c.accept(msg)); }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
